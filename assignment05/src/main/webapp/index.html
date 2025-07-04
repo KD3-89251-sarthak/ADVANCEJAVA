@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Online Voting System - Assignment 05</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+        .subtitle {
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 1.2em;
+        }
+        .nav-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .nav-card {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .nav-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .nav-card h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .nav-card p {
+            color: #666;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+        .nav-link {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            font-weight: bold;
+        }
+        .nav-link:hover {
+            background-color: #0056b3;
+        }
+        .nav-link.login {
+            background-color: #28a745;
+        }
+        .nav-link.login:hover {
+            background-color: #218838;
+        }
+        .nav-link.register {
+            background-color: #17a2b8;
+        }
+        .nav-link.register:hover {
+            background-color: #138496;
+        }
+        .features {
+            margin-top: 40px;
+            text-align: left;
+        }
+        .features h3 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+        .features ul {
+            color: #666;
+            line-height: 1.8;
+        }
+        .new-feature {
+            background-color: #d4edda;
+            border: 1px solid #c3e6cb;
+            border-radius: 5px;
+            padding: 15px;
+            margin-top: 30px;
+            color: #155724;
+        }
+        .demo-credentials {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 5px;
+            padding: 15px;
+            margin-top: 20px;
+            color: #856404;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Online Voting System</h1>
+        <p class="subtitle">Assignment 05 - Complete JSP Voting System</p>
+        
+        <div class="nav-links">
+            <div class="nav-card">
+                <h3>JSP Login</h3>
+                <p>Login using JSP with Bean and DAO</p>
+                <a href="index.jsp" class="nav-link login">Login</a>
+            </div>
+            
+            <div class="nav-card">
+                <h3>Register</h3>
+                <p>Create a new user account</p>
+                <a href="register.html" class="nav-link register">Register</a>
+            </div>
+            
+            <div class="nav-card">
+                <h3>View Results</h3>
+                <p>Check current election results</p>
+                <a href="results.jsp" class="nav-link">Results</a>
+            </div>
+            
+            <div class="nav-card">
+                <h3>Test Servlet</h3>
+                <p>Test basic servlet functionality</p>
+                <a href="hello" class="nav-link">Test</a>
+            </div>
+        </div>
+        
+        <div class="demo-credentials">
+            <h4>Demo Credentials:</h4>
+            <p><strong>Admin:</strong> admin@voting.com / admin123</p>
+            <p><strong>Note:</strong> Admin can add/edit candidates. Regular users can vote.</p>
+        </div>
+        
+        <div class="features">
+            <h3>Complete Features Implemented:</h3>
+            <ul>
+                <li>User Registration with form validation</li>
+                <li>Database integration for storing user details</li>
+                <li>Candidate management system</li>
+                <li>Results display with candidate information</li>
+                <li>JSP-based login system with LoginBean</li>
+                <li>UserDao for database operations</li>
+                <li>Session management</li>
+                <li><strong>NEW:</strong> Sign Out functionality</li>
+                <li><strong>NEW:</strong> Add Candidate (Admin only)</li>
+                <li><strong>NEW:</strong> Edit Candidate display (Admin only)</li>
+                <li><strong>NEW:</strong> Vote only if not already voted</li>
+                <li><strong>NEW:</strong> Complete dashboard interface</li>
+                <li><strong>NEW:</strong> Real-time voting results</li>
+                <li><strong>NEW:</strong> Vote tracking and prevention of duplicate votes</li>
+                <li>Responsive web design</li>
+            </ul>
+        </div>
+        
+        <div class="new-feature">
+            <strong>Assignment 05 Complete Features:</strong> 
+            <ul>
+                <li><strong>Sign Out:</strong> Proper session management with logout functionality</li>
+                <li><strong>Add Candidate:</strong> Admin can add new candidates through JSP interface</li>
+                <li><strong>Edit Candidate:</strong> Display candidate details in form controls (display only)</li>
+                <li><strong>Vote Control:</strong> Users can only vote once, system tracks voting status</li>
+                <li><strong>Dashboard:</strong> User-friendly interface with role-based access</li>
+                <li><strong>Real-time Results:</strong> Live voting results with percentages and visual bars</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+
