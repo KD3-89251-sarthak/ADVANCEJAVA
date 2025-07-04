@@ -1,0 +1,7 @@
+com\sunbeam\entity\User.class
+com\sunbeam\dao\UserDao.class
+com\sunbeam\dao\UserDaoImpl.class
+com\sunbeam\tester\TestHibernate.class
+com\sunbeam\entity\UserRole.class
+com\sunbeam\utils\HibernateUtils.class
+com\sunbeam\tester\UserRegistration.class
